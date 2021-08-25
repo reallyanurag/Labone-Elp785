@@ -1,0 +1,7 @@
+set title "Both"
+set logscale x
+set xlabel "size of square matrix(logarithmic)"
+set ylabel "time (sec)"
+set grid
+plot "src/fixedpoint.dat" title "Fixed Point" lt 6 lc 1 w lp, "src/floatingpoint.dat" title "Floating Point" lt 8 lc 2 w lp
+
